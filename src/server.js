@@ -6,6 +6,9 @@ const app = express();
 
 app.use(express.json());
 app.use(routes);
+app.route('*', (req, res) => {
+  res.redirect('https://github.com/MlkMahmud/todays-movies-api');
+});
 
 
 app.listen(port);

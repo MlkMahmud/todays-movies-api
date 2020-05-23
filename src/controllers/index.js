@@ -15,6 +15,7 @@ const init = async () => {
 
 export const getMovies = async () => {
   const collection = client.db(dbName).collection('movies');
+  // Filter Filmhouse's Web Test movie object
   const movies = await collection.find({ title: { $ne: 'Web Test' } }).toArray();
   return movies;
 };

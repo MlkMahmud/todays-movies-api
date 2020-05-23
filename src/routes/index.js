@@ -19,8 +19,4 @@ router.get('/api/v1/movies/comingsoon', async (req, res) => {
 });
 
 
-router.get('*', (req, res) => {
-  res.redirect('https://github.com/MlkMahmud/todays-movies-api/blob/develop/README.md');
-});
-
 export default router;

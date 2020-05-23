@@ -1,0 +1,40 @@
+{
+  "name": "todays-movies-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-node src/server",
+    "start": "node dist/server",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MlkMahmud/todays-movies-api.git"
+  },
+  "keywords": [],
+  "author": "Malik Mahmud <almalikmahmud@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MlkMahmud/todays-movies-api/issues"
+  },
+  "homepage": "https://github.com/MlkMahmud/todays-movies-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2"
+  }
+}

@@ -23,7 +23,7 @@ export const getMovies = async () => {
 export const getNowShowingMovies = async () => {
   const collection = client.db(dbName).collection('movies');
   const movies = await collection
-    .find({ now_showing: true, 'showtimes.1': { $exists: true } })
+    .find({ now_showing: true, 'showtimes.0': { $exists: true } })
     .toArray();
   return movies;
 };

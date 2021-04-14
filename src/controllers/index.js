@@ -9,7 +9,7 @@ const options = {
 const client = new MongoClient(uri, options);
 const dbName = process.env.DB_NAME;
 
-const init = async () => {
+const connectDB = async () => {
   await client.connect();
 };
 
@@ -34,4 +34,4 @@ export const getComingSoonMovies = async () => {
   return movies;
 };
 
-init();
+export default connectDB;
